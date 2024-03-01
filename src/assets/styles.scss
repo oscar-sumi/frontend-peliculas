@@ -1,0 +1,11 @@
+.contenedor {
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-auto-flow: row;
+    gap: 20px;
+}
+
+.item {
+    font-size: 12px;
+}
