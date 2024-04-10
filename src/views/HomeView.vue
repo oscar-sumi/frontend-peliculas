@@ -16,8 +16,8 @@
   </form>
   <div style="height: 35px;"></div>
   <div v-if="peliculas.Response != 'False'" class="contenedor">
-      <div v-for="pelicula in peliculas.Search" class="item">
-        <Card v-bind="pelicula" />
+      <div v-for="(pelicula, index) in peliculas.Search" :key="index" class="item">
+        <Card :pelicula="pelicula" />
       </div>
   </div>
 </template>
